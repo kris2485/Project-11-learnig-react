@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './App.scss';
 import List from '../List/List.js';
 import { pageContents, listData } from '../../data/dataStore';
+import Creator from '../Creator/Creator.js';
 
 class App extends React.Component {
   render() {
@@ -9,7 +10,7 @@ class App extends React.Component {
       <main className={styles.component}>
         <h1 className={styles.title}>{pageContents.title}</h1>
         <h2 className={styles.subtitle}>{pageContents.subtitle}</h2>
-        <List title={['Things to do ', <sup key='1'>soon!</sup>]} image={'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png'}></List>
+        <List {...listData}></List>
       </main>
     );
   }
