@@ -12,6 +12,8 @@ class Column extends React.Component {
   };
   static propTypes = {
     title: PropTypes.string.isRequired,
+    cards: PropTypes.array.isRequired,
+    icon: PropTypes.string.isRequired,
   };
   addCard(title) {
     this.setState((state) => ({
@@ -43,4 +45,5 @@ class Column extends React.Component {
     );
   }
 }
+
 export default Column;
