@@ -94,6 +94,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: "Places I'm going to visit <sup>soon!</sup>",
+    description: 'Interesting places I want to see!',
+    image: 'https://data.whicdn.com/images/331664720/original.jpg',
+  },
+  {
+    id: 'list-3',
+    title: 'Coding languages I will learn <sup>soon!</sup>',
+    description: 'Interesting things I want to learn!',
+    image: 'https://content.techgig.com/thumb/msid-80370192,width-860,resizemode-4/4-Modern-programming-languages-that-are-slow.jpg?58220',
+  },
 ];
 
 const columns = [
