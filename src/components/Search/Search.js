@@ -14,7 +14,7 @@ class Search extends React.Component {
     changeSearchString: PropTypes.func,
     countVisible: PropTypes.number,
     countAll: PropTypes.number,
-    history: PropTypes.node,
+    history: PropTypes.object,
   };
 
   static defaultProps = {
@@ -27,7 +27,7 @@ class Search extends React.Component {
 
   handleChange(event) {
     this.setState({
-      value: event.target.value,
+      value: event.target.value.toUpperCase(),
       visibleButtons: event.target.value.length > 0,
     });
   }
